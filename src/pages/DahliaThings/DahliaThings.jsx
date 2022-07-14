@@ -1,4 +1,5 @@
-
+import ThingCard from "../../components/ThingCard/ThingCard"
+import { Link } from "react-router-dom"
 
 
 const DahliaThings = (props) => {
