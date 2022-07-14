@@ -7,6 +7,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import CocoThings from './pages/CocoThings/CocoThings'
+import SavysThings from './pages/SavysThings/SavysThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -137,6 +138,13 @@ const App = () => {
       attributes: ["cute","fluffy"],
     },
   ])
+  const [savysThings, setSavysThings] = useState([
+    {
+      name: "CATS AND DOGS",
+      image: "https://www.rd.com/wp-content/uploads/2018/02/30_Adorable-Puppy-Pictures-that-Will-Make-You-Melt_124167640_YamabikaY.jpg?fit=700,467",  
+      attributes: ["cute","fluffy", "hungryyyy"],
+    },
+  ])
 
   return (
     <Routes>
@@ -161,6 +169,10 @@ const App = () => {
       <Route
         path="/coco-things"
         element={<CocoThings things={cocoThings} />}
+      />
+       <Route
+        path="/savys-things"
+        element={<SavysThings things={savysThings} />}
       />
     </Routes>
   )
