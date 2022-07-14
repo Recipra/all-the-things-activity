@@ -8,6 +8,7 @@ import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import CocoThings from './pages/CocoThings/CocoThings'
 import SavysThings from './pages/SavysThings/SavysThings'
+import DahliaThings from './pages/DahliaThings/DahliaThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -145,6 +146,13 @@ const App = () => {
       attributes: ["cute","fluffy", "hungryyyy"],
     },
   ])
+  const [dahliasThings, setDahliasThings] = useState([
+    {
+      name: "Desserts",
+      image: "https://sallysbakingaddiction.com/wp-content/uploads/2013/05/classic-chocolate-chip-cookies.jpg",  
+      attributes: ["delicious","warm", "hungryyyy"],
+    },
+  ])
 
   return (
     <Routes>
@@ -170,10 +178,15 @@ const App = () => {
         path="/coco-things"
         element={<CocoThings things={cocoThings} />}
       />
-       <Route
+      <Route
         path="/savys-things"
         element={<SavysThings things={savysThings} />}
       />
+      <Route
+        path="/dahlias-things"
+        element={<DahliaThings things={dahliasThings} />}
+      />
+
     </Routes>
   )
 }
