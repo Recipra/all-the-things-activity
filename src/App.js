@@ -9,6 +9,7 @@ import Landing from './pages/Landing/Landing'
 import CocoThings from './pages/CocoThings/CocoThings'
 import SavysThings from './pages/SavysThings/SavysThings'
 import DahliaThings from './pages/DahliaThings/DahliaThings'
+import InstrumentalThings from './pages/InstrumentalThings/InstrumentalThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -139,6 +140,7 @@ const App = () => {
       attributes: ["cute","fluffy"],
     },
   ])
+
   const [savysThings, setSavysThings] = useState([
     {
       name: "CATS AND DOGS",
@@ -146,11 +148,20 @@ const App = () => {
       attributes: ["cute","fluffy", "hungryyyy"],
     },
   ])
+
   const [dahliasThings, setDahliasThings] = useState([
     {
       name: "Desserts",
       image: "https://sallysbakingaddiction.com/wp-content/uploads/2013/05/classic-chocolate-chip-cookies.jpg",  
       attributes: ["delicious","warm", "hungryyyy"],
+    },
+  ])
+
+  const [jonathansThings, setJonathansThings] = useState([
+    {
+      name: "Instruments",
+      image: "https://sallysbakingaddiction.com/wp-content/uploads/2013/05/classic-chocolate-chip-cookies.jpg",  
+      attributes: ["not tuned","expensive", "also beautiful"],
     },
   ])
 
@@ -185,6 +196,10 @@ const App = () => {
       <Route
         path="/dahlias-things"
         element={<DahliaThings things={dahliasThings} />}
+      />
+      <Route
+        path="/jonathans-things"
+        element={<InstrumentalThings things={jonathansThings} />}
       />
 
     </Routes>

@@ -11,7 +11,8 @@ const Landing = () => {
       <Link to="/the-silly-things">Hunter's Things</Link><br/>
       <Link to="/coco-things">Coco's Things</Link><br/>
       <Link to="/savys-things">Savys's Things</Link><br/>
-      <Link to="/dahlias-things">Dahlia's Things</Link>
+      <Link to="/dahlias-things">Dahlia's Things</Link><br />
+      <Link to="/jonathans-things">Jonathan's Things</Link><br />
     </>
   )
 }
