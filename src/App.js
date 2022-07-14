@@ -6,6 +6,7 @@ import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import CocoThings from './pages/CocoThings/CocoThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -129,6 +130,14 @@ const App = () => {
     },
   ])
 
+  const [cocoThings, setCocoThings] = useState([
+    {
+      name: "PUPPIES",
+      image: "https://www.rd.com/wp-content/uploads/2018/02/30_Adorable-Puppy-Pictures-that-Will-Make-You-Melt_124167640_YamabikaY.jpg?fit=700,467",  
+      attributes: ["cute","fluffy"],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -148,6 +157,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/coco-things"
+        element={<CocoThings things={cocoThings} />}
       />
     </Routes>
   )
